@@ -6,7 +6,18 @@ display: flex;
 justify-content: center; 
   align-items: center;
 width: 100px;
-flex-direction: column;
+flex-direction: row;
 height: 50px;
 border-style: solid;
+`
+export const Section = styled.div`
+display:flex;
+flex-direction:column;
+text-align: center;`
+
+export const Ul = styled.ul`
+ display:flex;
+ gap:20px;
+ justify-content:center;
+flex-direction: row;
 `
