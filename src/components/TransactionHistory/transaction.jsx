@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Table } from './transaction.styled';
 import { DivContainer } from './transaction.styled';
+import { Td } from './transaction.styled';
 
 export default function HistoryTransaction(props) {
   const { id, type, amount, currency, transaction } = props;
@@ -20,9 +21,9 @@ export default function HistoryTransaction(props) {
       <tbody>
         {transaction.map((transactionItem) => (
           <tr key={transactionItem.id}>
-            <td>{transactionItem.type}</td>
-            <td>{transactionItem.amount}</td>
-            <td>{transactionItem.currency}</td>
+            <Td>{transactionItem.type}</Td>
+            <Td>{transactionItem.amount}</Td>
+            <Td>{transactionItem.currency}</Td>
           </tr>
         ))}
         </tbody>

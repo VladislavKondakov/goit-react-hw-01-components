@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
 import { ContainerUser } from './friendlist.styled.jsx'
 import { UlGap } from './friendlist.styled.jsx';
+import { LiUser } from './friendlist.styled.jsx';
+import { ImgUser } from './friendlist.styled.jsx';
+import { ContainerPosition } from './friendlist.styled.jsx';
 
 export default function Painting(props) {
   const { url, name, tag, location, followers, views, likes } = props;
   return (
-     <ContainerUser>
+    <ContainerUser>
+     <ContainerPosition>
   <div className="description">
-    <img
+    <ImgUser
       src={url}
       alt="User avatar" 
       className="avatar"
@@ -18,19 +22,20 @@ export default function Painting(props) {
   </div>
 
   <UlGap>
-    <li>
+    <LiUser>
       <span className="label">Followers</span>
       <span className="quantity">{followers}</span>
-    </li>
-    <li>
+    </LiUser>
+    <LiUser>
       <span className="label">Views</span>
       <span className="quantity">{views}</span>
-    </li>
-    <li>
+    </LiUser>
+    <LiUser>
       <span className="label">Likes</span>
       <span className="quantity">{likes}</span>
-    </li>
- </UlGap>
+    </LiUser>
+        </UlGap>
+        </ContainerPosition>
     </ContainerUser>
   )
 }

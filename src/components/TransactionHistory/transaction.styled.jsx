@@ -15,3 +15,6 @@ export const Table = styled.table`
 width:500px;
 border-style: solid;
 `
+ export const Td = styled.td`
+ border: 1px groove;
+`

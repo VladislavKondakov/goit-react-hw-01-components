@@ -8,7 +8,8 @@ justify-content: center;
 width: 100px;
 flex-direction: row;
 height: 50px;
-border-style: solid;
+border-style: groove;
+margin:0;
 `
 export const Section = styled.div`
 display:flex;
@@ -17,7 +18,6 @@ text-align: center;`
 
 export const Ul = styled.ul`
  display:flex;
- gap:20px;
  justify-content:center;
 flex-direction: row;
 `

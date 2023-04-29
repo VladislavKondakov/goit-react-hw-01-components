@@ -6,7 +6,7 @@ import { Ul } from './statistic.styled';
   export default function StatisticMarkUp ({ title, stats })  {
   return (
     <Section>
-      <h2>Upload stats</h2>
+      {title && <h2>{title}</h2>}
 
       <Ul>
         {data.map(({ id, label, percentage }) => {
