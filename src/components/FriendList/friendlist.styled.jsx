@@ -25,6 +25,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 background-color:GhostWhite;
+flex-direction:column;
 `
 
 export const ImgUser = styled.img`
